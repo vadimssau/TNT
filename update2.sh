@@ -15,12 +15,10 @@ do
         echo $(printf "%s: Up-to-date" "$NOW")
     elif [ $LOCAL = $BASE ]; then
         echo $(printf "%s: Updating..." "$NOW")
-        make down
-        git pull
-        make up
+        make upgrade
         echo $(printf "%s: Done..." "$NOW")
     else
         echo "Diverged!"
     fi
-    sleep 5
+    sleep 3
 done

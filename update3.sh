@@ -11,5 +11,5 @@ do
         make down
         make up
     fi
-    sleep 10
+    sleep 3
 done
